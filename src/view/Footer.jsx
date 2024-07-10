@@ -14,10 +14,11 @@ const Footer = () => {
     <footer className='flex flex-col border-t-[1px] border-black border-solid bg-sectionbg sm:px-5 py-section-y lg:px-section-x'>
         <div className='flex lg:flex-row sm:flex-col sm:justify-center  sm:items-center sm:gap-3 justify-between mt-6'>
             <img className='sm:hidden lg:block w-[368px] h-[175px]' src={logo} alt="logo" />
+            <h1 className='text-base font-bold font-Mulish text-center uppercase'>Subscribe for updates on upcoming products!</h1>
             {submitted ? (
                 <p className="text-green-600 font-Mulish font-medium text-base">Thank you for subscribing!</p>
                 ) : (
-                <form onSubmit={handleSubmit} className="mt-5 flex flex-col items-center sm:w-[300px] lg:w-[527px] sm:mb-5 justify-center gap-[10px]">
+                <form onSubmit={handleSubmit} className="lg:mt-5 sm:mt-1 flex flex-col items-center sm:w-[300px] lg:w-[527px] sm:mb-5 justify-center gap-[10px]">
                   <div  className='w-full'>
                     <input
                       type="email"
