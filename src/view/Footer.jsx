@@ -11,13 +11,13 @@ const Footer = () => {
         setSubmitted(true);
       };
   return (
-    <footer className='flex flex-col border-t-[1px] border-black border-solid bg-sectionbg py-section-y px-section-x'>
-        <div className='flex justify-between mt-6'>
-            <img className='w-[368px] h-[175px]' src={logo} alt="logo" />
+    <footer className='flex flex-col border-t-[1px] border-black border-solid bg-sectionbg sm:px-5 py-section-y lg:px-section-x'>
+        <div className='flex lg:flex-row sm:flex-col sm:justify-center  sm:items-center sm:gap-3 justify-between mt-6'>
+            <img className='sm:hidden lg:block w-[368px] h-[175px]' src={logo} alt="logo" />
             {submitted ? (
                 <p className="text-green-600 font-Mulish font-medium text-base">Thank you for subscribing!</p>
                 ) : (
-                <form onSubmit={handleSubmit} className="mt-5 flex flex-col items-center w-[527px] justify-center gap-[10px]">
+                <form onSubmit={handleSubmit} className="mt-5 flex flex-col items-center sm:w-[300px] lg:w-[527px] sm:mb-5 justify-center gap-[10px]">
                   <div  className='w-full'>
                     <input
                       type="email"
@@ -37,10 +37,10 @@ const Footer = () => {
                   </button>
                 </form>
             )}
-            <img className='w-[368px] h-[175px]' src={logoOrg} alt="logo" />
+            <img className='sm:w-[192px] sm:h-24 lg:w-[368px] lg:h-[175px]' src={logoOrg} alt="logo" />
         </div>
-        <div className='flex justify-center items-center mt-32 mb-12'>
-            <ul className='flex uppercase justify-between gap-6 font-Mulish font-bold text-base'>
+        <div className='flex justify-center items-center sm:mt-5 lg:mt-32 mb-12'>
+            <ul className='flex uppercase lg:flex-row sm:grid grid-cols-2 justify-between gap-6 font-Mulish sm:text-xs font-bold lg:text-base'>
                 <li>©2024, old barrel</li>
                 <li><a href="#">refund policy</a></li>
                 <li><a href="#">Privacy policy</a></li>

@@ -7,6 +7,9 @@ const ProductPage = () => {
   return (
     <div className='flex flex-col'>
         <NavBar />
+        <div className='flec'>
+
+        </div>
         <Footer />
     </div>
   )

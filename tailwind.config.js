@@ -26,8 +26,37 @@ module.exports = {
       padding:{
         "section-x" :"70px",
         "section-y" :"24px",
-
-      }
+      },
+      screens: {
+        'sm': '370px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
+      keyframes: {
+        slideInLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-100%)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideOutLeft: {
+          '0%': { opacity: '1', transform: 'translateX(0)' },
+          '100%': { opacity: '0', transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        slideInLeft: 'slideInLeft 1s forwards',
+        slideOutLeft: 'slideOutLeft 0.5s forwards',
+      },
     },
   },
   plugins: [],
