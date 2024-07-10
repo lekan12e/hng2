@@ -3,9 +3,9 @@ import { bestSeller } from '../constants/data'
 
 const BestSeller = () => {
   return (
-    <section className='bg-[#FFF6E9] flex flex-col gap-6 py-6 sm:px-5 lg:px-[70px]'>
+    <section id='' className='bg-[#FFF6E9] flex flex-col lg:gap-5 sm:gap-2 py-8 sm:px-5 lg:px-[70px]'>
         <div className='text-start'>
-            <h1 className='font-Mulish font-extralight text-xs text-[#3B383A]'>BEST SELLERS</h1>
+            <h1 className='font-Mulish font-extralight lg:tracking-normal sm:tracking-[4px] text-xs text-[#1A1A1A]'>BEST SELLERS</h1>
         </div>
         <div className='flex sm:flex-col lg:flex-row gap-6 justify-between'>
             {bestSeller.map((item) => (
